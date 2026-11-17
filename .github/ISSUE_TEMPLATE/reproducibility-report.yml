@@ -29,6 +29,7 @@ body:
       label: Outcome
       options:
         - Did not reproduce
+        - Partly reproduced (some numbers differ)
         - Reproduced, on a setup not listed in the README
         - Could not run the code
     validations:

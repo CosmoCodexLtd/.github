@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for looking at our work closely enough to want to improve it. This guide applies to every repository in the CosmoCodexLtd organisation that does not have its own.
+Thank you for helping to correct and test our work. This guide applies to every repository in the CosmoCodexLtd organisation that does not have its own.
 
 ## What helps most
 

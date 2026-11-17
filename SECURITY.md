@@ -11,7 +11,7 @@ Research code in this organisation has not been independently audited unless its
 Use either route:
 
 - Email **info@cosmocodex.com** with "Security" in the subject line.
-- On a public repository where private vulnerability reporting is enabled, open the **Security** tab and choose **Report a vulnerability**. This sends a private report that only the maintainers can see ([how it works](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability)).
+- On a public repository where private vulnerability reporting is enabled, open the **Security and quality** tab and choose **Report a vulnerability**. This sends a private report that only you and the maintainers can see ([how it works](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability)).
 
 Please include:
 
@@ -37,4 +37,4 @@ Please act in good faith. Do not access, change or delete data that is not yours
 
 ## Other products
 
-Social Neuron and TheVPNMatrix publish their own contact details on their own sites. Reports about those products sent to the address above will be passed on.
+Social Neuron publishes its security contact at https://socialneuron.com/.well-known/security.txt. For The VPN Matrix, use the address above.

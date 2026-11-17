@@ -12,7 +12,7 @@ body:
     attributes:
       label: Where is it?
       description: Repository, file and section, or the paper title, version and page.
-      placeholder: "privacy-enhancing-technologies, README.md, Differential privacy"
+      placeholder: "repository, file and section heading"
     validations:
       required: true
   - type: textarea
