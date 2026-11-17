@@ -1,3 +1,5 @@
+<img src="./assets/two-worlds.png" width="100%" alt="Two overlapping Laplace curves. Blue: what a private system publishes when Alice is not in the data. Rust: when she is. The overlap is where she is lost in the noise. Laplace mechanism, epsilon = 1: 61% of outputs fit either world, so the best attacker is right 70% of the time.">
+
 # Cosmo Codex Labs
 
 Cosmo Codex Labs is the research group of CosmoCodex Ltd, a UK company. We research privacy engineering for AI: how to measure and limit what AI systems reveal about people.
