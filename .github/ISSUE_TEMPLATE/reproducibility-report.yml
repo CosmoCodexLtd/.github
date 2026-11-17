@@ -1,0 +1,65 @@
+name: Reproducibility report
+description: A number, table, figure or proof check that you ran from our released code, whether or not it reproduced.
+title: "Reproducibility: "
+labels: ["reproducibility"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Reports that a result *does* reproduce on a setup we did not test are welcome too. For a security problem, use the security policy instead of this form.
+  - type: input
+    id: work
+    attributes:
+      label: Paper or repository, and version
+      description: Paper title and version (arXiv vN or DOI), or the repository with a tag or commit hash.
+      placeholder: "repository@v1.0.0 or commit 1a2b3c4"
+    validations:
+      required: true
+  - type: input
+    id: claim
+    attributes:
+      label: Which result?
+      description: Table, figure, theorem, equation or the sentence that states the number.
+      placeholder: "Table 2, row 3"
+    validations:
+      required: true
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: Outcome
+      options:
+        - Did not reproduce
+        - Reproduced, on a setup not listed in the README
+        - Could not run the code
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: What you ran
+      description: Exact commands, in order. Say if you changed any code, data or parameters.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, language and toolchain versions (for example Python, Lean and Mathlib), hardware, and random seeds if set.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+      description: What the paper or README says you should get.
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed result
+      description: What you got. Paste output or attach logs.
+      render: text
+    validations:
+      required: true

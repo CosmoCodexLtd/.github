@@ -1,0 +1,36 @@
+name: Research question or prior work
+description: A question about our research, or prior work that bears on one of our open questions.
+title: "Research: "
+labels: ["research-question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Our open questions are listed on the [organisation page](https://github.com/CosmoCodexLtd#open-questions). This form is public; do not include unpublished results you want to keep private, or anything about a security problem.
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Which question does this concern?
+      options:
+        - Counting what leaves (maximal-leakage accounting)
+        - Purpose-bound outputs
+        - '"No inference", relative to the recipient'
+        - Attesting what leaves, not only what runs
+        - Machine-checked privacy claims
+        - Sealed evaluations
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question or point
+    validations:
+      required: true
+  - type: textarea
+    id: prior-work
+    attributes:
+      label: Prior work
+      description: Papers, systems or standards, with DOI, arXiv identifier or URL.
+    validations:
+      required: false

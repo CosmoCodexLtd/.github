@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security problem
+    url: https://github.com/CosmoCodexLtd/.github/blob/main/SECURITY.md
+    about: Please do not open a public issue. Follow the security policy to report privately.
+  - name: General enquiries
+    url: https://cosmocodex.com/contact
+    about: Questions about consulting, products or the company.

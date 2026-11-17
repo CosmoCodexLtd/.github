@@ -1,0 +1,56 @@
+name: Citation or link error
+description: A reference that is wrong, does not exist, links to the wrong work, or is out of date.
+title: "Citation: "
+labels: ["citation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. Please give the correct source itself (DOI, arXiv identifier, RFC number or the publisher's page), not a summary of it.
+  - type: input
+    id: location
+    attributes:
+      label: Where is it?
+      description: Repository, file and section, or the paper title, version and page.
+      placeholder: "privacy-enhancing-technologies, README.md, Differential privacy"
+    validations:
+      required: true
+  - type: textarea
+    id: as-written
+    attributes:
+      label: The entry as it is written
+      description: Paste the citation or sentence exactly.
+      render: markdown
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What is wrong?
+      multiple: true
+      options:
+        - The work does not exist
+        - Wrong authors
+        - Wrong title, venue, year or pages
+        - The link is dead or points to a different work
+        - The work has been withdrawn, superseded, renamed or archived
+        - The work does not support the claim it is cited for
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: The correct source
+      description: The DOI, arXiv identifier, RFC number or URL of the primary source, and the corrected citation if you have it.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checked
+    attributes:
+      label: Check
+      options:
+        - label: I opened the source above and compared it with the entry.
+          required: true
+        - label: If an AI tool helped me write this report, I checked every reference in it myself.
+          required: false
