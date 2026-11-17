@@ -1,18 +1,27 @@
 # Security policy
 
-This policy covers the websites and published code of CosmoCodex Ltd: cosmocodex.com and the public repositories in this organisation.
+This policy covers cosmocodex.com and every public repository in the CosmoCodexLtd organisation, including code released with our papers. It applies to any repository here that does not have its own `SECURITY.md`.
+
+## Status of research code
+
+Research code in this organisation has not been independently audited unless its README says so. It is written to support a paper, not to protect production data. Please do not rely on it for that.
 
 ## Reporting a problem
 
-Email **info@cosmocodex.com** with "Security" in the subject line.
+Use either route:
+
+- Email **info@cosmocodex.com** with "Security" in the subject line.
+- On a public repository where private vulnerability reporting is enabled, open the **Security** tab and choose **Report a vulnerability**. This sends a private report that only the maintainers can see ([how it works](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability)).
 
 Please include:
 
-- what is affected (URL, repository or file);
+- what is affected (URL, repository, file, or the paper and version);
 - what you found and how to reproduce it;
 - what you think the impact is.
 
 Do not open a public issue for a security problem. Do not send personal data or other people's data in a report; describe where it is exposed instead.
+
+A flaw in a proof or a privacy bound in one of our papers is also welcome here if you think it could lead someone to rely on a guarantee that does not hold.
 
 ## What to expect
 
